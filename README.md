@@ -1,1 +1,2 @@
-Currently working on it and trying different things with React
+# Lucia / ToyaXo Website
+Personal website, tried to do some things with React
