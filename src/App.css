@@ -1,0 +1,85 @@
+#container {
+    margin-top: 4vh;
+    position: relative;
+    width: min(50vw, 900px);
+    padding: 1.5rem;
+    background: rgba(76, 29, 84, 0.5);
+    border-radius: 20px;
+    aspect-ratio: 4 / 3;
+    text-align: center;
+    box-sizing: border-box;
+    color: rgba(254, 226, 255, 0.8);
+}
+
+#title {
+    font-size: clamp(1.6rem, 5vw, 2.5rem);
+}
+
+#pronouns {
+    font-size: clamp(0.95vw, 2.5vw, 1.1rem);
+}
+
+#description {
+    font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+}
+
+#links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    img {
+        width: 15rem;
+        padding: 0.5rem;
+    }
+    .redirect {
+        width: 17rem;
+        padding: 0.5rem;
+        background: rgba(76, 29, 84, 0.8);
+        border-radius: 10px;
+        border-color: rgba(248, 211, 255, 0.3);
+        margin: 0.25rem;
+        color: rgba(254, 226, 255, 0.8);
+        font-size: clamp(1.2rem, 3.5vw, 2.5rem);
+    }
+    #temp-icon {
+        font-size: clamp(0.5rem, 0.4vw, 0.5rem);
+    }
+}
+
+#links-container button:hover {
+    background: rgb(106, 41, 118);
+    scale: 1.1;
+    text-decoration: underline;
+
+    animation: hover 0.5s ease-in-out alternate infinite;
+    transition: all 0.3s ease;
+}
+
+@keyframes hover {
+    0% {
+        rotate: 2deg;
+    }
+    100% {
+        rotate: -2deg;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #container {
+        width: 90vw;
+        aspect-ratio: auto;
+        border-radius: 15px;
+    }
+    #links-container {
+        margin-top: 3rem;
+        img {
+            width: 6rem;
+        }
+        .redirect {
+            width: 9rem;
+            font-size: clamp(1.2rem, 3.5vw, 2.5rem);
+        }
+    }
+}
