@@ -29,3 +29,4 @@ src/assets/photos/*.fuse*
 src/assets/photos/compressed
 src/assets/photos-exif-debug.json
 src/assets/photos-info.json
+src/assets/photos/toconvert
