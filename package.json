@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "exifreader": "^4.36.2",
+    "exifreader": "^4.37.0",
     "fs": "*",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
